@@ -1,0 +1,29 @@
+server:
+  port: 9999
+
+spring:
+  datasource:
+    username: root
+    password: 947499
+    url: jdbc:mysql:///ocr_data_system
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 20MB
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+logging:
+  level:
+    com.yun: debug
