@@ -10,12 +10,7 @@ import com.yun.backend.util.ImgBase64Util;
 import com.yun.backend.util.Result;
 import org.springframework.web.bind.annotation.RequestParam;
 
-/*
-{"Name":"李玥芸","Sex":"女","Nation":"汉","Birth":"2001/7/11",
-"Address":"安徽省合肥市瑶海区琅琊山路怡康园3幢406室","IdNum":"340103200107111026",
-"Authority":"","ValidDate":"","AdvancedInfo":"{}",
-"RequestId":"ab6c157b-b89f-49df-810e-a5afff6388bd"}
- */
+
 public class IDCardOCR {
     public static final String SECRET_ID = "";
     public static final String SECRET_KEY = "";
